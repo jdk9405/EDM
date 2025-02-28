@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PLACEHOLDER FOR DESCRIPTION">
+  <meta name="keywords" content="KEYWORD, KEYWORD, KEYWORD">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EDM: Equirectangular Projection-Oriented Dense Kernelized Feature Matching </title>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <!-- <link rel="stylesheet" href="./definitive-image-comparison-slider-master/src/dics.css"> -->
+  <!-- <script src="./definitive-image-comparison-slider-master/src/dics.js"></script> -->
+	<!-- <script> -->
+ <!--    document.addEventListener('DOMContentLoaded', domReady); -->
+ <!--    function domReady() { -->
+ <!--      var b = document.querySelectorAll('.b-dics'); -->
+ <!--      b.forEach(element =>  -->
+ <!--        new Dics({ -->
+ <!--          container: element, -->
+ <!--          textPosition: 'top' -->
+ <!--        }) -->
+ <!--      ); -->
+ <!--    } -->
+	<!-- </script> -->
+
+
+  <style>
+    .center-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This will make it take the full height of the viewport */
+    }
+
+    .sketchfab-embed-wrapper {
+        width: 80%; /* Adjust this value to change the size */
+        height: 80%; /* Adjust this value to change the size */
+    }
+    .center-image {
+    display: flex;
+    justify-content: center;
+    }
+</style>
+
+</head>
+
+
+
+
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-size:36px;">
+            <span style="color:crimson">EDM</span>: <span style="color:crimson">E</span>quirectangular Projection-Oriented <span style="color:crimson">D</span>ense Kernelized Feature <span style="color:crimson">M</span>atching
+          </h1>
+          <h2 style="font-size:24px;color:#6e6e6e">Annonymous</h2>
+          <div class="column has-text-centered">
+            <div class="link-block">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- <span class="link-block"> -->
+              <!--   <a href="" -->
+              <!--      class="external-link button is-normal is-rounded is-dark"> -->
+              <!--     <span class="icon"> -->
+              <!--         <i class="fas fa-file-pdf"></i> -->
+              <!--     </span> -->
+              <!--     <span>Supplementary</span> -->
+              <!--   </a> -->
+              <!-- </span> -->
+              <!-- <span class="link-block"> -->
+              <!--   <a href="" -->
+              <!--      class="external-link button is-normal is-rounded is-dark"> -->
+              <!--     <span class="icon"> -->
+              <!--         <i class="ai ai-arxiv"></i> -->
+              <!--     </span> -->
+              <!--     <span>arXiv</span> -->
+              <!--   </a> -->
+              <!-- </span> -->
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span>
+              <!-- Dataset Link. -->
+              <!-- <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data (Soon)</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/main.png" alt="Nerfies" height="100%">
+      <h2 class="subtitle has-text-centered">
+        <span class="EDM">EDM</span> estimates distortion-aware dense correspondences between pairs of omnidirectional images.
+      </h2>
+    </div>
+  </div>
+</section>
+	
+
+<section class="section">
+  <!-- Abstract. -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          We introduce the first learning-based dense matching algorithm, termed Equirectangular Projection-Oriented Dense Kernelized Feature Matching (EDM), specifically designed for omnidirectional images. Equirectangular projection (ERP) images, with their large fields of view, are particularly suited for dense matching techniques that aim to establish comprehensive correspondences across images. However, ERP images are subject to significant distortions, which we address by leveraging the spherical camera model and geodesic flow refinement in the dense matching method. To further mitigate these distortions, we propose spherical positional embeddings based on 3D Cartesian coordinates of the feature grid. Additionally, our method incorporates bidirectional transformations between spherical and Cartesian coordinate systems during refinement, utilizing a unit sphere to improve matching performance. We demonstrate that our proposed method achieves notable performance enhancements, with improvements of +26.72 and +42.62 in AUC@5° on the Matterport3D and Stanford2D3D datasets, respectively.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/method.png" alt="Nerfies" height="100%">
+      <div class="content has-text-justified">
+        Our model architecture is inspired by designs of SOTA dense matching models, but re-designed for the distortion-awareness for omnidirectional images.
+        First, we propose a Spherical Spatial Alignment Module that utilizes Gaussian Process regression and spherical positional embeddings to establish 3D correspondences between omnidirectional images.
+        Second, we use Geodesic Flow Refinement by enabling conversions between coordinates to refine the displacement on the surface of the sphere.
+        Moreover, with azimuth rotation for data augmentation, we achieve state-of-the-art performance in dense matching and relative pose estimation between two omnidirectional images.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <!-- Results. -->
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Results</h2>
+        <img src="./static/images/warp1.png" alt="Nerfies" height="100%">
+        </p>
+        <!-- balank line-->
+        <br>
+        <img src="./static/images/warp2.png" alt="Nerfies" height="100%">
+        <div class="content has-text-justified">
+          Qualitative results. Warp refers to results obtained by multiplying the warped image with the predicted certainty map, demonstrating that our method yields accurate dense matches.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="center-image">
+        <h2 class="title is-3">Downstream Tasks : Spherical Two View Geometry</h2>
+      </div>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="paper_triangulation1" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/4d072b94c7224065a4f71016f7707b08/embed"> </iframe> </div>
+        </div>
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="paper_triangulation4" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/65a2d030b773452aa905ea0bf4418ba4/embed"> </iframe> </div>
+        </div>
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="paper_triangulation5" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/4a9bd1257de04d8f959abe62a0caa93f/embed"> </iframe> </div>
+        </div>
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="paper_triangulation3" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/d2f1fd48742f471b95e5a29864c0bc3a/embed"> </iframe> </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <div class="center-image">
+        <h2 class="title is-3">Downstream Tasks : Spherical Structure from Motion</h2>
+      </div>
+
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="2t7WUuJeko7 SfM" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/5950c3eaa0b646688fe94def248f31d3/embed"> </iframe> </div>
+        </div>
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="RPmz2sHmrrY SfM" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/18239245752a46c2acfbc56d88cabdb2/embed"> </iframe> </div>
+        </div>
+        <div class="item item-steve">
+          <div class="sketchfab-embed-wrapper"> <iframe title="YVUC4YcDtcY SfM" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="720" height="480" src="https://sketchfab.com/models/a956ce6d4fdb45859a7a262fa07dd474/embed"> </iframe> </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="#">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Thanks to <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> for their excellent website templates.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  bulmaCarousel.attach('#geo-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true
+  });
+  bulmaCarousel.attach('#novel-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true
+  });
+  bulmaCarousel.attach('#edit-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 2,
+    infinite: true
+  });
+</script>
+
+</body>
+</html>
