@@ -1,4 +1,4 @@
-<h1 align="center">⚡💃🎶: Equirectangular Projection-Oriented Dense Kernelized Feature Matching</h1>
+<h1 align="center">EDM: Equirectangular Projection-Oriented Dense Kernelized Feature Matching</h1>
 
 <!-- Arxiv Link, Project Link -->
 
